@@ -67,3 +67,47 @@ fullString = str1 + ' ' + str2
 
 print(fullString)
 
+
+#Built-in functions & Methods
+
+quote =  'to be or not to be'
+print(len(quote)) 
+print(quote.capitalize())
+print(quote.upper())
+print(quote.replace('be', 'me'))
+
+#Booleans
+
+# bool can be True or False
+print(bool(1))
+print(bool(0))
+
+fb_name = "Sri"
+fb_age = 50
+fb_rel_status = "Single"
+fb_rel_status = 'it\'s complicated'
+
+print(fb_rel_status)
+
+# birth_year= input('What year ware you born: ')
+# get_current_age = 2023 - int(birth_year)
+# print(f'Your Age is :  {get_current_age}')
+
+#Create a python program  for password checker
+ 
+#input('JayJay')
+#input('secret')
+
+#print(f'User Name: {}  and you password {*******} is {6} character')
+
+# username2 = 'JayJay'
+# passw = 'secret'
+
+username2 = input('Enter user name: ')
+passw = input('Enter your password: ')
+
+getPassLenth = len(passw)
+hiddenPass = '*' * getPassLenth
+
+print(f'The User Name Is : {username2} \nThe Password is : {hiddenPass} & Password length is {getPassLenth}')
+

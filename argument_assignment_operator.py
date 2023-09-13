@@ -45,5 +45,7 @@ print('arr:'+ text2[-1]) #Last index value of array
 print('arr:'+ text2[::-1]) #Revers order of array step 1
 print('arr:'+ text2[::-2]) #Revers order of array step 2
 
+#Immutability 
+
 
 

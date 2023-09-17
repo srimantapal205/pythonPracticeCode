@@ -45,7 +45,111 @@ print('arr:'+ text2[-1]) #Last index value of array
 print('arr:'+ text2[::-1]) #Revers order of array step 1
 print('arr:'+ text2[::-2]) #Revers order of array step 2
 
-#Immutability 
+#List
+li = [1,2,3,4,5]
+li2 = ['a','b','c']
+li3 = ['a','b', 1,2,3,True]
 
+amazone_cart = ['notebook', 'Sunglasses']
+print(amazone_cart[1])
 
+#list Slicing
 
+amazoneCart = [
+      'notebook', 
+      'Sunglasses', 
+      'toys',
+      'grapes'
+]
+
+print(amazoneCart)
+
+amazoneCart[0]='laptop'
+print(amazoneCart)
+
+newCart = amazoneCart[:] #Copy of array 
+newCart[0]= 'gum'
+print(newCart)
+
+#Matrix
+
+matrixList = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+]
+print(matrixList[1][2])
+
+#List Methods
+
+basket = [1,2,3,4,5,6]
+print(basket)
+print(len(basket))
+
+#adding
+print(basket.append(7))
+#print(basket)
+newBasket = basket
+print(newBasket)
+
+basket.insert(1,99)
+newBasket2 = basket;
+print(newBasket2)
+
+basket.extend([101])
+newBasket3 = basket;
+print(newBasket3)
+
+#Remove
+
+basket.pop()
+
+print(basket)
+
+#List Item Data 
+      #Duplicate
+thisList = ['apple', 'banana', 'cherry','apple', 'cherry']
+print(thisList)
+
+      #list Length
+print(len(thisList))
+
+list1 = ['apple', 'banana','cherry']
+list2 = [1,2,3,4,5]
+list3 = [True, False,True]
+
+list4 = ['apple', 'banana',4,5, True, 6,False]
+
+      #list type
+print(type(list1))
+print(type(list2))
+print(type(list3))
+print(type(list4))
+
+      #list constructor
+consttList = list((thisList + list2))
+print(consttList)
+
+      #Access Lists
+print(consttList[2])
+print(consttList[-1])
+print(consttList[2:6])
+print(consttList[:6])
+print(consttList[2:])
+print(consttList[-5:-1])
+
+newItemList =  ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+newItemList.append("blackcurrant")
+
+newItemList2 = newItemList
+print(newItemList2)
+
+newItemList3 = ["blackcurrant", "watermelon"]
+newItemList.extend(consttList)
+
+newlistItem = newItemList
+print(newlistItem)
+
+#remove Item
+newlistItem.remove('mango')
+print(newlistItem)

@@ -140,7 +140,7 @@ print(consttList[-5:-1])
 
 newItemList =  ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
 newItemList.append("blackcurrant")
-
+sortItem = newItemList
 newItemList2 = newItemList
 print(newItemList2)
 
@@ -150,6 +150,61 @@ newItemList.extend(consttList)
 newlistItem = newItemList
 print(newlistItem)
 
-#remove Item
+      #remove Item
 newlistItem.remove('mango')
 print(newlistItem)
+print(len(newlistItem))
+
+newlistItem.pop(15) #removes the specified index.
+print(newlistItem)
+print(len(newlistItem))
+
+newlistItem.pop() #Remove the item from last.
+print(newlistItem)
+print(len(newlistItem))
+
+clearList =  list1
+
+print(clearList)
+
+clearList.clear() #this method clear the all content from the list but list still remains
+
+print(clearList)
+
+
+createNewItem = []
+createNewItem.extend(newItemList2)
+print(createNewItem)
+
+print(createNewItem.count('apple'))
+
+
+letterList =['a','h','b','r','q','c','t','a', 'i']
+letterList.sort()
+
+print(letterList)
+print(letterList.count('a'))
+
+numberlist= [5,8,4,6,1,2,4,6,3,8,4,5,6,2,5]
+numberlist.sort() #It's return same list with sorted
+print(sorted(numberlist)) # it's return new list
+print(numberlist)
+print(numberlist.count(2))
+
+new_numberlist = numberlist.copy()
+print(new_numberlist)
+new_numberlist.reverse()
+print(new_numberlist)
+
+ace_number = new_numberlist.copy()
+ace_number.reverse()
+print(ace_number)
+
+
+print(len(ace_number))
+
+ace_number[::-1]
+print(ace_number)
+
+lst_1to100 = range(1,100)
+print(list(lst_1to100))

@@ -211,4 +211,21 @@ print(list(lst_1to100))
 
 #Dictionary
 
-dict
+thisdict = {"brand" : "Ford", "model":"Mustang", "year":1964}
+print(thisdict)
+print(thisdict['brand'])
+
+
+thisdict2 = {"brand" : "Ford", "model":"Mustang", "year":1964, "year":2020,}
+print(thisdict2)
+
+print(len(thisdict))
+
+thisdict3 ={"brand" : "Ford", "model":"Mustang", "year":1964, "color":["red", "white","blue"]}
+print(type(thisdict3))
+
+# dict() Constructor
+
+thisdict4 = dict(name = "John", age = 36, country = "England")
+
+print(thisdict4)

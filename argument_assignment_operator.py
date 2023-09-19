@@ -208,3 +208,7 @@ print(ace_number)
 
 lst_1to100 = range(1,100)
 print(list(lst_1to100))
+
+#Dictionary
+
+dict

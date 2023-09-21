@@ -229,3 +229,26 @@ print(type(thisdict3))
 thisdict4 = dict(name = "John", age = 36, country = "England")
 
 print(thisdict4)
+
+user1 = {
+      'basket': [1,2,3],
+      'greet': 'hello',
+      'age':20
+}
+
+print(user1.get('age', 55 ))
+
+user2 = dict(name='Jhon Jhon')
+
+print(user2);
+
+# Dict Mthod 2
+print(user1.items())
+
+print(user1)
+
+# user1.clear()
+# print(user1)
+
+print(user1.pop('age'))
+print(user1)

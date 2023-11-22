@@ -8,11 +8,11 @@ print(newText.format(age))
 quantity = 3
 itemno = 654
 price = 49.95
-myOrder = "I want {} pieces of item {} for {} dollats."
+myOrder = "I want {} pieces of item {} for {} dollars."
 print(myOrder.format(quantity, itemno, price))
 
 #Using  index numbers to be sure th arguments are placed.
-myOrder2 = "I want {2} pieces of item {0} for {1} dollats."
+myOrder2 = "I want {2} pieces of item {0} for {1} dollars."
 print(myOrder2.format(quantity, itemno, price))
 
 # Python String Methods 

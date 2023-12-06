@@ -1,4 +1,5 @@
-#A python program to create a view() of an exiting array
+#A python program to create a view() of an exiting array 
+#Example of shallow copying
 
 from numpy import *
 a = arange(1, 6) #Create a with element 1 to 5

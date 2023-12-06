@@ -1,4 +1,4 @@
- #A python program tp compare two array
+ #A python program to compare two array
 from numpy import *
 
 a = array([1,2,3,4,5])

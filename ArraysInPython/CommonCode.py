@@ -77,3 +77,25 @@ print(flatten2DArr)
 
 flatten3DArr = arr3D.flatten()
 print(flatten3DArr)
+
+#The ones() and zeros() function
+onesArr = ones((3, 4), float)
+print(onesArr)
+
+onesArr2 = ones((4, 4))
+print(onesArr2)
+
+zerosArr = zeros((3,3))
+print(zerosArr)
+
+zerosArr2 = zeros((4,3), int)
+print(zerosArr2)
+
+#the eye()
+
+eryArr = eye(3)
+print(eryArr)
+
+eryArr2 = eye(3, dtype=int)
+print(eryArr2)
+

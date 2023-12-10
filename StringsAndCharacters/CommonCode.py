@@ -82,3 +82,17 @@ ras = spaceString.strip()
 print("Revove Space from left side :: ", ras, " Length :: ", len(ras))
 
 
+#Relacing a string with another string
+
+mainString = "This is new book"
+rs1 = "book"
+reps = "python book" 
+print(mainString)
+modifyString = mainString.replace(rs1 , reps)
+print(modifyString)
+
+#Split and joing string
+
+spString = 'one, two, three, four'
+spString1 = spString.split(',')
+print(spString1)

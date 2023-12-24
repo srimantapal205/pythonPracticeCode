@@ -65,3 +65,59 @@ print(lst_3)
 
 str_lst = [i+j for i in 'ABC' for j in 'DE']
 print(str_lst)
+
+tuf_1 = 1,2,3,4,5
+print(type(tuf_1))
+lst_5 = [1,2,3,4,5]
+
+tpl_1 = tuple(lst_5)
+print(type(tpl_1))
+print(tpl_1)
+
+tpl_2 = tuple(range(2, 11, 2))
+print(tpl_2)
+
+tpl_3 = (10,20,30,40,50,60,70,80,90,100, 20,)
+
+#Accessing tuple using index
+print(tpl_3[0])
+print(tpl_3[5])
+print(tpl_3[-1])
+print(tpl_3[-7])
+
+#Access slicing methods
+print(tpl_3[:])
+print(tpl_3[1:4])
+print(tpl_3[2:11:2])
+print(tpl_3[:2])
+print(tpl_3[:8:2])
+print(tpl_3[::-2])
+print(tpl_3[:-2:])
+
+lenTpl = len(tpl_3)
+print(lenTpl)
+
+tplMin = min(tpl_3)
+print(tplMin)
+
+tplMax = max(tpl_3)
+print(tplMax)
+
+tplCount = tpl_3.count(20)
+print(tplCount)
+
+tplIndex = tpl_3.index(40)
+print(tplIndex)
+
+tpl_sorted = sorted(tpl_3, reverse=True)
+print(tpl_sorted)
+
+
+
+
+
+
+
+
+
+

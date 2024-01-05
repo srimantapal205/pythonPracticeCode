@@ -1,22 +1,17 @@
-#Apython program showing single inheritance whichtwo sub class are derived from single base class
-#single inheritance
-class Banks(object):
-    cash = 100000000
-    @classmethod
-    def available_cash(cls):
-        print(cls.cash)
-    
-class AndhraBank(Banks):
+#A python program to implement multiple inheritance using base class
+#Multiple Inheritance
+class Father:
+    def height(self):
+        print('Height is 6.0 foot')
+class Mother:
+    def color(self):
+        print('Color is brown')
+
+class Child(Father, Mother):
     pass
 
-class StateBank(Banks):
-    cash = 20000000
-    @classmethod
-    def available_cash(cls):
-        print(cls.cash +Banks.cash)
-        
-ab = AndhraBank()
-ab.available_cash()
+c = Child()
+print('Child\'s inherited qualites ::')
 
-sb = StateBank()
-sb.available_cash()
+c.color()
+c.height()

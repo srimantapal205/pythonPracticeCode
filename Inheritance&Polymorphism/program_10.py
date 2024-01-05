@@ -1,29 +1,22 @@
-#A python program to access base class constractor and methods in the sub class using super()
-#Accessing base class constractor and method in the sub class
-
-class Squre:
-    def __init__(self, x):
-        self.x = x
+#Apython program showing single inheritance whichtwo sub class are derived from single base class
+#single inheritance
+class Banks(object):
+    cash = 100000000
+    @classmethod
+    def available_cash(cls):
+        print(cls.cash)
     
-    def area(self):
-        print('Area of squre :: ', self.x*self.x)
-    
+class AndhraBank(Banks):
+    pass
 
-class Rectangle(Squre):
-    def __init__(self, x, y):
-        super().__init__(x)
-        self.y = y
-    
-    def area(self):
-        super().area()
-        print('Area of Rectangle == ', self.x*self.y)
+class StateBank(Banks):
+    cash = 20000000
+    @classmethod
+    def available_cash(cls):
+        print(cls.cash +Banks.cash)
+        
+ab = AndhraBank()
+ab.available_cash()
 
-#find areas of square an rectangle
-
-a, b = [float(x) for x in input('Enter two measuerments :: ').split(',')]
-
-r = Rectangle(a,b)
-r.area()
-
-         
-
+sb = StateBank()
+sb.available_cash()

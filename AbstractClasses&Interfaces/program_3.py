@@ -1,7 +1,7 @@
 # A python program to create a car abstract class that contains an instance varible a concert method and two abstract class
 #This is an abstract class.
 from abc import *
-class Car(ABC):
+class Cars(ABC):
     def __init__(self, regno) :
         self.regno = regno
 
@@ -10,11 +10,11 @@ class Car(ABC):
         print('For the car with Reg No ::', self.regno)
     
     @abstractmethod
-    def Steering(self):
+    def steering(self):
         pass
     
     @abstractmethod
-    def Braking(self):
+    def braking(self):
         pass
     
     

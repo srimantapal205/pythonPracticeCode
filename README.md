@@ -22,3 +22,5 @@
 # Classes&Object
 
 # Inheritance&Polymorphism
+
+# Abstract Calsses & Interfaces

@@ -1,0 +1,6 @@
+ERROR:root:invalid literal for int() with base 10: 'ss'
+Traceback (most recent call last):
+  File "c:\Users\srima\Documents\learning\Technology\python\practiceCode\Exceptions\program_16.py", line 10, in <module>
+    b = int(input('Enter another number ::  '))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'ss'

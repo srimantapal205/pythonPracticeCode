@@ -12,11 +12,11 @@ for i in range(n):
     empName = input('Enter Emp Name :: ')
     emp_sal = input('Enter Emp Salary :: ')
 
-#Create Emp class object.
-e = Emp.Emp(emp_id,empName,emp_sal)
+    #Create Emp class object.
+    e = Emp.Emp(emp_id,empName,emp_sal)
 
-#store the object into the file f
-pickle.dump(e, f)
+    #store the object into the file f
+    pickle.dump(e, f)
 
 #close file
 f.close()

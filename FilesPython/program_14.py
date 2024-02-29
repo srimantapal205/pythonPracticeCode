@@ -15,7 +15,7 @@ with open('cites.bin', 'wb') as f:
         
         #increase city name to 20 chars
         #by adding remaing space
-        city = city + (reclen -ln)*''
+        city = city + (reclen - ln)*''
         #convert city name in to byte string
         city = city.encode()
         #write the city name into the filr

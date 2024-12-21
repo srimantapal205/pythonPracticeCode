@@ -61,3 +61,50 @@ islands = {
 }
 
 collect_poneglyph_types(islands)
+
+
+'''
+
+Devil Fruit User Class
+In One Piece, characters who consume a Devil Fruit gain special powers.
+
+Task: Create a class called DevilFruitUser with the following specifications:
+
+An attribute name (string) to store the user's name.
+
+A private attribute __devil_fruit (string) to store the name of the Devil Fruit.
+
+A method reveal_fruit() that returns the name of the Devil Fruit.
+
+A method use_power() that prints:
+
+"[name] uses the power of the [devil_fruit]!"
+
+'''
+
+class DevilFruitUser:
+    def __init__(self, name, devil_fruit):
+        self.name = name
+        self.__devil_fruit = devil_fruit
+        
+    def reveal_fruit(self):
+        return self.__devil_fruit
+        
+    def use_power(self):
+     devil_fruit_name =  self.reveal_fruit()
+     print(f"{self.name} uses the power of the {devil_fruit_name}!") 
+     
+    
+name = "Nico Robin"
+devil_fruit = "Hana Hana no Mi"
+
+user =    DevilFruitUser(name, devil_fruit)
+
+print(user.name)
+
+fruit_name = user.reveal_fruit()
+print(fruit_name)
+
+user.use_power()
+
+        

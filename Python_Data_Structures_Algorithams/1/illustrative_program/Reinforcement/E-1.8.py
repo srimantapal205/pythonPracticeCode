@@ -26,7 +26,7 @@ def findZodic(year):
     elif year % 12 == 0:
         return 'Monkey'
 while  True:
-    year = int(input('Enter your of birth : '))
+    year = int(input('Enter your year of birth : '))
     print('You are born in the year :', year)
     print('Your chinese Zodiac Animal is : ', findZodic(year))
     ch = input('Enter Y to continue and N to exit : ')

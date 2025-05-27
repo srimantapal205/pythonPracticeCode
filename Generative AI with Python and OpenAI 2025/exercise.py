@@ -1,20 +1,19 @@
-'''
+"""
 
 Gear Transformation Power Calculation
 In the One Piece universe, Monkey D. Luffy can activate different "Gear" transformations, each amplifying his base power in unique ways. The total power is calculated using the following formula:
 
 total_power = base_power * (gear_level ** 2)
 Write a function called calculate_power that takes as input Luffy's base_power and the gear_level, and computes his total power during that transformation.
-
-'''
+"""
 def calculate_power(base_power, gear_level ):
     '''The total power is calculated using the following formula:'''
     total_power = base_power * (gear_level ** 2)
     return total_power
 
-print('The total power is : ', total_power(1000,2))
+print('The total power is : ', calculate_power(1000,2))
 
-'''
+"""
 
 The Straw Hat Pirates have a list of islands they plan to visit.
 
@@ -42,7 +41,7 @@ islands = {
     'Alabasta': ['Historical Poneglyph']
 }
 
-'''
+"""
 
 def collect_poneglyph_types(island):
     unique_poneglyphs =  set()
@@ -63,7 +62,7 @@ islands = {
 collect_poneglyph_types(islands)
 
 
-'''
+"""
 
 Devil Fruit User Class
 In One Piece, characters who consume a Devil Fruit gain special powers.
@@ -80,7 +79,7 @@ A method use_power() that prints:
 
 "[name] uses the power of the [devil_fruit]!"
 
-'''
+"""
 
 class DevilFruitUser:
     def __init__(self, name, devil_fruit):
